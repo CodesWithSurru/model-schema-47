@@ -12,7 +12,7 @@ app.get("/books",(req,res)=>{
 }) 
 app.get("/book/new",(req,res)=>{
     res.send("List of new books")
-    res.render()
+    res.render("newbooks.ejs")
 })
 app.post("/book/new",(req,res)=>{
     res.send("List of new books")
