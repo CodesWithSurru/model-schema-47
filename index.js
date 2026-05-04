@@ -21,7 +21,16 @@ app.get(" /books/:id",(req,res)=>{
     res.send("Unique book")
     let {id}= req.params() ;
     let data = require("data.json");
-    let name = data.id.name ;
+    
+    if(id==1){
+        let name = data[0].title ;
+    }
+    if(id==2){
+        let name = data[1].title ;
+    }
+    if(id==3){
+        let name = data[2].title ;
+    }
     res.render("id.ejs",name);
     
     
